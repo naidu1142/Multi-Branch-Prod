@@ -61,7 +61,7 @@ pipeline {
                         git checkout main
                         git reset --hard origin/main
 
-                        sed -i "s|image:.*|image: ${IMAGE_NAME}:${IMAGE_TAG}|" ${APP_PATH}/k8s/deployment.yml
+                        sed -i "s|image:.*|image: ${IMAGE_NAME}:${IMAGE_TAG}|" ${APP_PATH}/k8s/deployment.yaml
 
                         git add ${APP_PATH}/k8s/deployment.yml
                         git diff --cached --quiet || git commit -m "Updated image to ${IMAGE_TAG}"
