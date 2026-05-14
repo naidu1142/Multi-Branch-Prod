@@ -9,9 +9,6 @@ pipeline {
         IMAGE_NAME            = "naidu1142/multibranch-flask-app"
         GIT_USER              = "naidu1142"
         GIT_EMAIL             = "nrpn934@gmail.com"
-        // AWS_ACCESS_KEY_ID     = credentials('aws-access-key')
-        // AWS_SECRET_ACCESS_KEY = credentials('aws-secret-key')
-        // AWS_DEFAULT_REGION    = 'us-east-1'
         APP_PATH              = "Production-Grade-Deployment-main/Main_Branch_Code"
     }
 
